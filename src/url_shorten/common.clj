@@ -48,5 +48,6 @@
 (defpage "/about/me" []
   (layout
    [:h3 "Jerry's first Noir project, a small URL shortener."]
-   [:p "Clojure is cool, Noir is cool, this is only a small demo
-        showing how cool they could be!"]))
+   [:p "Clojure is cool, Noir is cool, Reddis is cool!"]
+   [:p "This is a small weekend project for practising web development with all
+       these cool stuff."]))
