@@ -65,4 +65,5 @@
   "Get a list of the ID and URLs"
   []
   (let [ids (redis/zrevrange db url-access 0 50)]
-    (map vector ids (apply redis/hmget db id-url-key ids))))
+    (if-not (= (count ids) 0)
+      (map vector ids (apply redis/hmget db id-url-key ids)))))
